@@ -63,7 +63,7 @@ class CharacterrProfileViewController: UIViewController {
         
     }
     
-    func configureViewWithInfo(info: CharacterProfile) {
+    func configureViewWith(info: CharacterProfile) {
         addCoverView(info.coverURL)
         addSectionView(with: "Alias", content: info.alias)
         addSectionView(with: "Name", content: info.name)
