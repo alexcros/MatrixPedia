@@ -21,10 +21,13 @@ class CharacterrProfileViewController: UIViewController {
     
     fileprivate lazy var stackView: UIStackView = { [unowned self] in
         let stackView = UIStackView()
-        
-        stackView
-        
-        }()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.alignment = .fill
+        stackView.distribution = .fillProportionally
+        stackView.spacing = 0
+        return stackView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
