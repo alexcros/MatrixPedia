@@ -36,15 +36,18 @@ class CharacterrProfileViewController: UIViewController {
         
     }
     
-    init(withCharacterId) {
-        
+    init(withCharacterId characterId: Int) {
+        self.characterId = characterId
+        super.init(nibName:nil, bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func loadProfile()
+    func loadProfile() {
+        
+    }
     
     func setupView() {
         self.title = "Profile"
