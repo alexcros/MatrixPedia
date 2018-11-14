@@ -63,6 +63,13 @@ class CharacterrProfileViewController: UIViewController {
         
     }
     
+    func configureViewWithInfo(info: CharacterProfile) {
+        addCoverView(info.coverURL)
+        addSectionView(with: "Alias", content: info.alias)
+        addSectionView(with: "Name", content: info.name)
+        addSectionView(with: "Description", content: info.description)
+    }
+    
     func setupView() {
         self.title = "Profile"
         setupScrollView()
