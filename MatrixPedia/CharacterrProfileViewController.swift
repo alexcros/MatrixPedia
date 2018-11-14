@@ -10,14 +10,14 @@ import UIKit
 import Alamofire
 
 class CharacterrProfileViewController: UIViewController {
-
+    
     let characterId: Int
     
     fileprivate lazy var scrollView: UIScrollView = { [unowned self] in
         let scrollView = UIScrollView()
         scrollView.backgroundColor = .yellow
         return scrollView
-    }()
+        }()
     
     fileprivate lazy var stackView: UIStackView = { [unowned self] in
         let stackView = UIStackView()
@@ -27,11 +27,11 @@ class CharacterrProfileViewController: UIViewController {
         stackView.distribution = .fillProportionally
         stackView.spacing = 0
         return stackView
-    }()
+        }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            setupView()
+        setupView()
         
         
     }
@@ -46,6 +46,20 @@ class CharacterrProfileViewController: UIViewController {
     }
     
     func loadProfile() {
+        Alamofire.request("http://127.0.0.1/characters\(characterId)/info").responseJSON{ [weak self] response in
+            
+            if let data = response.data,
+                let jsonData = try? JSONSerialization.jsonObject(with: data,
+                                                                 options: JSONSerialization.ReadingOptions.allowFragments),
+                let charactersInfo = jsonData as? [[String: Any]],
+                let characterInfo = charactersInfo.first,
+                let info = CharacterProfile(json: characterInfo) {
+                self?.configureViewWith(info: info)
+                
+            } else {
+                self?.navigationController?.popViewController(animated: true)
+            }
+        }
         
     }
     
@@ -63,10 +77,11 @@ class CharacterrProfileViewController: UIViewController {
         scrollView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         scrollView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
         scrollView.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
-    
+        
     }
     
     func setupStackView() {
+        //scrollView
         
     }
 }
