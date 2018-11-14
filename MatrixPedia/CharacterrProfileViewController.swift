@@ -70,6 +70,36 @@ class CharacterrProfileViewController: UIViewController {
         addSectionView(with: "Description", content: info.description)
     }
     
+    func addCoverView(_ urlString: String) {
+        Alamofire.request(urlString).response { [weak self] dataResponse in
+            guard dataResponse.error == nil,
+                let data = dataResponse.data else {
+                    return
+            }
+            
+            let view = UIView()
+            let imageView = UIImageView()
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            imageView.contentMode = .scaleAspectFit
+            view.addSubview(imageView)
+            
+            self?.stackView.insertArrangedSubview(view, at: 0)
+            
+            imageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+            view.heightAnchor.constraint(equalToConstant: 250).isActive = true
+            
+            imageView.image = UIImage(data: data)
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                self?.stackView.layoutIfNeeded()
+            })
+            
+        }
+        
+    }
+    
     func setupView() {
         self.title = "Profile"
         setupScrollView()
