@@ -100,6 +100,34 @@ class CharacterrProfileViewController: UIViewController {
         
     }
     
+    func addSectionView(with title: String, content: String) {
+        addTitleSection(title)
+        addContentSection(content)
+    }
+    
+    func addTitleSection(_ title: String) {
+        let titleLabel = UILabel()
+        
+        titleLabel.numberOfLines = 1
+        titleLabel.text = title
+        titleLabel.textAlignment = .center
+        titleLabel.backgroundColor = .lightGray
+        titleLabel.textColor = .black
+        titleLabel.font = UIFont(name: "Helvetica", size: 23)
+        
+        stackView.addArrangedSubview(titleLabel)
+        
+    }
+    
+    func addContentSection(_ content: String) {
+        let contentLabel = UILabel()
+        contentLabel.text = content
+        contentLabel.numberOfLines = 0
+        contentLabel.font = UIFont(name: "Helvetia", size: 18)
+        
+        stackView.addArrangedSubview(contentLabel)
+    }
+    
     func setupView() {
         self.title = "Profile"
         setupScrollView()
