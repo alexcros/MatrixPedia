@@ -46,7 +46,7 @@ class CharacterrProfileViewController: UIViewController {
     }
     
     func loadProfile() {
-        Alamofire.request("http://127.0.0.1/characters\(characterId)/info").responseJSON{ [weak self] response in
+        Alamofire.request("http://127.0.0.1/characters/\(characterId)/info").responseJSON{ [weak self] response in
             
             if let data = response.data,
                 let jsonData = try? JSONSerialization.jsonObject(with: data,

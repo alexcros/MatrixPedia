@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let root = CharactersTableViewController()
         let nc = UINavigationController(rootViewController: root)
         window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = nc
         window?.makeKeyAndVisible()
         
         return true
