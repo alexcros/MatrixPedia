@@ -11,7 +11,7 @@
         <!--Characters Table View Controller-->
         <scene sceneID="1dr-OO-G11">
             <objects>
-                <tableViewController id="2F1-GE-a6A" customClass="CharactersTableViewController" customModule="MatrixPedia" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CharactersTableViewController" id="2F1-GE-a6A" customClass="CharactersTableViewController" customModule="MatrixPedia" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Q3-Jf-vjC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

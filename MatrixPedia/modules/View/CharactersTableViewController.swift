@@ -12,11 +12,13 @@ import Alamofire
 class CharactersTableViewController: UITableViewController {
     
     var characters = [MatrixCharacter]()
+    var presenter: ViewToPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewSetup()
         loadCharacters()
+        presenter?.updateView()
     }
     
     func tableViewSetup() {
@@ -73,3 +75,30 @@ class CharactersTableViewController: UITableViewController {
         tableView.cellForRow(at: indexPath)?.selectionStyle = .none
     }
 }
+
+extension CharactersTableViewController: PresenterToViewProtocol {
+    func showError() {
+        let alert = UIAlertController(title: "Alert", message: "Problem Fetching characters", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showCharacters(characters: MatrixCharacter) {
+        print(characters)
+        print("DONE")
+    }
+    
+//    func showNews(news: LiveNewsModel) {
+//        authorLabel.text = news.author;
+//        titleLabel.text = news.title;
+//        descriptionLabel.text = news.description;
+//    }
+//
+//    func showError() {
+//        let alert = UIAlertController(title: "Alert", message: "Problem Fetching News", preferredStyle: UIAlertControllerStyle.alert)
+//        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+//        self.present(alert, animated: true, completion: nil)
+//    }
+    
+}
+
