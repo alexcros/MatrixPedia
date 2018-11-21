@@ -16,11 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let root = CharactersTableViewController()
-        let nc = UINavigationController(rootViewController: root)
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = nc
-        window?.makeKeyAndVisible()
+//        let root = CharactersTableViewController()
+//        let nc = UINavigationController(rootViewController: root)
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.rootViewController = nc
+//        window?.makeKeyAndVisible()
+        
+//        let matrixCharacters = 
+        
         
         return true
     }
