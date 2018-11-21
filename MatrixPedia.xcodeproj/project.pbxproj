@@ -16,10 +16,11 @@
 		AC567531219382020016AB5B /* CharactersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC567530219382020016AB5B /* CharactersTableViewController.swift */; };
 		AC567533219382320016AB5B /* MatrixCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC567532219382320016AB5B /* MatrixCharacter.swift */; };
 		ACDEAAB121A5D064005DA240 /* MatrixCharactersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDEAAB021A5D064005DA240 /* MatrixCharactersRouter.swift */; };
-		ACDEAAB321A5D103005DA240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDEAAB221A5D103005DA240 /* Main.storyboard */; };
 		ACDEAAB721A5D4D2005DA240 /* MatrixProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDEAAB621A5D4D2005DA240 /* MatrixProtocols.swift */; };
 		ACDEAAB921A5D6BD005DA240 /* LiveNewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDEAAB821A5D6BD005DA240 /* LiveNewsPresenter.swift */; };
 		ACDEAABB21A5D7FD005DA240 /* MatrixCharactersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDEAABA21A5D7FD005DA240 /* MatrixCharactersInteractor.swift */; };
+		ACDEAABD21A5DDE3005DA240 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDEAABC21A5DDE3005DA240 /* CharactersViewController.swift */; };
+		ACDEAABF21A5E198005DA240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDEAABE21A5E197005DA240 /* Main.storyboard */; };
 		BC30F1E7241A026C41D6A5FB /* Pods_MatrixPediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C601DE20446C994A7CEAD7E /* Pods_MatrixPediaTests.framework */; };
 		ED3018B933323CDE9004280D /* Pods_MatrixPedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7F7D59FAF41A87DB321CF8 /* Pods_MatrixPedia.framework */; };
 /* End PBXBuildFile section */
@@ -51,10 +52,11 @@
 		AC567530219382020016AB5B /* CharactersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersTableViewController.swift; sourceTree = "<group>"; };
 		AC567532219382320016AB5B /* MatrixCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCharacter.swift; sourceTree = "<group>"; };
 		ACDEAAB021A5D064005DA240 /* MatrixCharactersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCharactersRouter.swift; sourceTree = "<group>"; };
-		ACDEAAB221A5D103005DA240 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ACDEAAB621A5D4D2005DA240 /* MatrixProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixProtocols.swift; sourceTree = "<group>"; };
 		ACDEAAB821A5D6BD005DA240 /* LiveNewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNewsPresenter.swift; sourceTree = "<group>"; };
 		ACDEAABA21A5D7FD005DA240 /* MatrixCharactersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCharactersInteractor.swift; sourceTree = "<group>"; };
+		ACDEAABC21A5DDE3005DA240 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
+		ACDEAABE21A5E197005DA240 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AF06BB104A9872EF2D7CFF07 /* Pods-MatrixPediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixPediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MatrixPediaTests/Pods-MatrixPediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B00181C68F6297F9E43F4635 /* Pods-MatrixPediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixPediaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MatrixPediaTests/Pods-MatrixPediaTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC88C5FFF76F8F14B3D51229 /* Pods-MatrixPedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixPedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MatrixPedia/Pods-MatrixPedia.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,7 +128,7 @@
 				ACDEAAA921A5CF62005DA240 /* modules */,
 				AC5675102193814A0016AB5B /* AppDelegate.swift */,
 				AC5675172193814C0016AB5B /* Assets.xcassets */,
-				ACDEAAB221A5D103005DA240 /* Main.storyboard */,
+				ACDEAABE21A5E197005DA240 /* Main.storyboard */,
 				AC5675192193814C0016AB5B /* LaunchScreen.storyboard */,
 				AC56751C2193814C0016AB5B /* Info.plist */,
 			);
@@ -168,6 +170,7 @@
 			children = (
 				AC567530219382020016AB5B /* CharactersTableViewController.swift */,
 				AC36ADDB219388B9005CA798 /* CharacterrProfileViewController.swift */,
+				ACDEAABC21A5DDE3005DA240 /* CharactersViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -290,9 +293,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACDEAAB321A5D103005DA240 /* Main.storyboard in Resources */,
 				AC56751B2193814C0016AB5B /* LaunchScreen.storyboard in Resources */,
 				AC5675182193814C0016AB5B /* Assets.xcassets in Resources */,
+				ACDEAABF21A5E198005DA240 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +390,7 @@
 				AC36ADDC219388B9005CA798 /* CharacterrProfileViewController.swift in Sources */,
 				ACDEAAB921A5D6BD005DA240 /* LiveNewsPresenter.swift in Sources */,
 				ACDEAABB21A5D7FD005DA240 /* MatrixCharactersInteractor.swift in Sources */,
+				ACDEAABD21A5DDE3005DA240 /* CharactersViewController.swift in Sources */,
 				ACDEAAB121A5D064005DA240 /* MatrixCharactersRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
