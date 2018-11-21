@@ -31,7 +31,7 @@ class MatrixCharactersInteractor: PresentorToInterectorProtocol{
                     newCharacters.append(newCharacter)
                 }
                 
-                self?.presenter?.matrixCharactersFetched(characters: newCharacters.first!)
+                self?.presenter?.matrixCharactersFetched(characters: newCharacters)
                 
                 // pasar a presenter
 //                self?.characters = newCharacters

@@ -77,15 +77,15 @@ class CharactersTableViewController: UITableViewController {
 }
 
 extension CharactersTableViewController: PresenterToViewProtocol {
+    func showCharacters(characters: [MatrixCharacter]) {
+        print(characters)
+        print("DONE")
+    }
+    
     func showError() {
         let alert = UIAlertController(title: "Alert", message: "Problem Fetching characters", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
-    }
-    
-    func showCharacters(characters: MatrixCharacter) {
-        print(characters)
-        print("DONE")
     }
     
 //    func showNews(news: LiveNewsModel) {

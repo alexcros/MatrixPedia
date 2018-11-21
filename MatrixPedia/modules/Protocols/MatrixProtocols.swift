@@ -9,12 +9,13 @@
 import UIKit
 
 protocol PresenterToViewProtocol: class {
-    func showCharacters(characters: MatrixCharacter)
+    
+    func showCharacters(characters: [MatrixCharacter])
     func showError()
 }
 // fix
 protocol InterectorToPresenterProtocol: class {
-    func matrixCharactersFetched(characters: MatrixCharacter)
+    func matrixCharactersFetched(characters: [MatrixCharacter])
     func matrixCharactersFetchedFailed()
 }
 

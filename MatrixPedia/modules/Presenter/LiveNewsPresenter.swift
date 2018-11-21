@@ -21,7 +21,7 @@ class MatrixCharactersPresenter: ViewToPresenterProtocol {
 
 extension MatrixCharactersPresenter: InterectorToPresenterProtocol {
     
-    func matrixCharactersFetched(characters: MatrixCharacter) {
+    func matrixCharactersFetched(characters: [MatrixCharacter]) {
         view?.showCharacters(characters: characters)
     }
     
