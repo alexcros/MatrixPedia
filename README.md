@@ -22,7 +22,7 @@ $ docker run -d -p 80:80 -v ~/docker-json-server-master/matrix.json:/data/db.jso
 The above example exposes the JSON Server REST API on port 80, so that you can brows to:
 
 ```
-http://localhost/characters
+http://localhost
 ```
 
 Retrieve all the characters:
