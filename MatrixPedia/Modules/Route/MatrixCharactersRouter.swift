@@ -12,13 +12,9 @@ class MatrixCharactersRouter: PresenterToRouterProtocol {
     
     class func createModule() -> UIViewController {
         
-//        let view = mainstoryboard.instantiateViewController(withIdentifier: "CharactersTableViewController") as? CharactersTableViewController
-        
         let view = mainstoryboard.instantiateViewController(withIdentifier: "CharactersViewController") as? CharactersViewController
         
-        //if let view = navController.childViewControllers.first as? LiveNewsViewController {
-        //fix
-        let presenter: ViewToPresenterProtocol & InterectorToPresenterProtocol = MatrixCharactersPresenter() //LiveNewsPresenter()
+        let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = MatrixCharactersPresenter()
         let interactor: PresentorToInterectorProtocol = MatrixCharactersInteractor()
         let router: PresenterToRouterProtocol = MatrixCharactersRouter()
         
@@ -29,7 +25,6 @@ class MatrixCharactersRouter: PresenterToRouterProtocol {
         interactor.presenter = presenter
         
         return view!
-
     }
     
     static var mainstoryboard: UIStoryboard{

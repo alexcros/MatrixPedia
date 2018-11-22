@@ -8,7 +8,7 @@
 
 import UIKit
 import Alamofire
-
+// TODO: Refactor
 class CharacterrProfileViewController: UIViewController {
     
     let characterId: Int
@@ -32,8 +32,6 @@ class CharacterrProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        
-        
     }
     
     init(withCharacterId characterId: Int) {
@@ -95,7 +93,7 @@ class CharacterrProfileViewController: UIViewController {
             UIView.animate(withDuration: 0.3, animations: {
                 self?.stackView.layoutIfNeeded()
             })
-            
+    
         }
         
     }

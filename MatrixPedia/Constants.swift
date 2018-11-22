@@ -9,7 +9,5 @@
 import Foundation
 
 class Constants{
-    
     public static let URL = "http://127.0.0.1/characters";
-    
 }

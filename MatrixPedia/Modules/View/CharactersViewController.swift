@@ -9,28 +9,21 @@
 import UIKit
 import Alamofire
 
-class CharactersViewController: UIViewController {
-    
-    var presenter: ViewToPresenterProtocol?
-    
-    @IBOutlet weak var tableView: UITableView!
+class CharactersViewController: UIViewController, Alertable {
     
     // MARK: - Properties
     var matrixCharacters: [MatrixCharacter] = []
+    var presenter: ViewToPresenterProtocol?
     
-    @IBOutlet weak var authorLabel: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UITextView!
-
+    // MARK: - IBOutlet
+    @IBOutlet weak var tableView: UITableView!
     
+    // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-//        tableView.delegate = self
         presenter?.updateView()
-        
     }
-
 }
 
 extension CharactersViewController: PresenterToViewProtocol, UITableViewDataSource {
@@ -40,7 +33,7 @@ extension CharactersViewController: PresenterToViewProtocol, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cellId = "MatricCell"
+        let cellId = "MatrixCell"
         
         let person = matrixCharacters[indexPath.row]
         
@@ -55,19 +48,13 @@ extension CharactersViewController: PresenterToViewProtocol, UITableViewDataSour
         return cell!
     }
     
-    
     func showCharacters(characters: [MatrixCharacter]) {
         self.matrixCharacters = characters
         self.tableView.reloadData()
-//        authorLabel.text = "\(characters.id)"
-//        titleLabel.text = characters.alias
-//        descriptionLabel.text = "\(characters.type)"
     }
     
     func showError() {
-        let alert = UIAlertController(title: "Alert", message: "Problem Fetching News", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        showAlert(title: "Alert!", message: "Problem fetching Characters")
     }
     
 }

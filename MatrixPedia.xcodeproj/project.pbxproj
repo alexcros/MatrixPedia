@@ -13,15 +13,15 @@
 		AC5675182193814C0016AB5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5675172193814C0016AB5B /* Assets.xcassets */; };
 		AC56751B2193814C0016AB5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5675192193814C0016AB5B /* LaunchScreen.storyboard */; };
 		AC5675262193814C0016AB5B /* MatrixPediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5675252193814C0016AB5B /* MatrixPediaTests.swift */; };
-		AC567531219382020016AB5B /* CharactersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC567530219382020016AB5B /* CharactersTableViewController.swift */; };
 		AC567533219382320016AB5B /* MatrixCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC567532219382320016AB5B /* MatrixCharacter.swift */; };
 		ACDEAAB121A5D064005DA240 /* MatrixCharactersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDEAAB021A5D064005DA240 /* MatrixCharactersRouter.swift */; };
 		ACDEAAB721A5D4D2005DA240 /* MatrixProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDEAAB621A5D4D2005DA240 /* MatrixProtocols.swift */; };
-		ACDEAAB921A5D6BD005DA240 /* LiveNewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDEAAB821A5D6BD005DA240 /* LiveNewsPresenter.swift */; };
+		ACDEAAB921A5D6BD005DA240 /* MatrixCharactersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDEAAB821A5D6BD005DA240 /* MatrixCharactersPresenter.swift */; };
 		ACDEAABB21A5D7FD005DA240 /* MatrixCharactersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDEAABA21A5D7FD005DA240 /* MatrixCharactersInteractor.swift */; };
 		ACDEAABD21A5DDE3005DA240 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDEAABC21A5DDE3005DA240 /* CharactersViewController.swift */; };
 		ACDEAABF21A5E198005DA240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDEAABE21A5E197005DA240 /* Main.storyboard */; };
 		ACDEAAC121A6120E005DA240 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDEAAC021A6120E005DA240 /* Constants.swift */; };
+		ACDEAAC421A62516005DA240 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDEAAC321A62516005DA240 /* UIViewController+Alert.swift */; };
 		BC30F1E7241A026C41D6A5FB /* Pods_MatrixPediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C601DE20446C994A7CEAD7E /* Pods_MatrixPediaTests.framework */; };
 		ED3018B933323CDE9004280D /* Pods_MatrixPedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7F7D59FAF41A87DB321CF8 /* Pods_MatrixPedia.framework */; };
 /* End PBXBuildFile section */
@@ -50,15 +50,15 @@
 		AC5675212193814C0016AB5B /* MatrixPediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixPediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5675252193814C0016AB5B /* MatrixPediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixPediaTests.swift; sourceTree = "<group>"; };
 		AC5675272193814C0016AB5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC567530219382020016AB5B /* CharactersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersTableViewController.swift; sourceTree = "<group>"; };
 		AC567532219382320016AB5B /* MatrixCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCharacter.swift; sourceTree = "<group>"; };
 		ACDEAAB021A5D064005DA240 /* MatrixCharactersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCharactersRouter.swift; sourceTree = "<group>"; };
 		ACDEAAB621A5D4D2005DA240 /* MatrixProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixProtocols.swift; sourceTree = "<group>"; };
-		ACDEAAB821A5D6BD005DA240 /* LiveNewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNewsPresenter.swift; sourceTree = "<group>"; };
+		ACDEAAB821A5D6BD005DA240 /* MatrixCharactersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCharactersPresenter.swift; sourceTree = "<group>"; };
 		ACDEAABA21A5D7FD005DA240 /* MatrixCharactersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCharactersInteractor.swift; sourceTree = "<group>"; };
 		ACDEAABC21A5DDE3005DA240 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		ACDEAABE21A5E197005DA240 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ACDEAAC021A6120E005DA240 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ACDEAAC321A62516005DA240 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		AF06BB104A9872EF2D7CFF07 /* Pods-MatrixPediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixPediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MatrixPediaTests/Pods-MatrixPediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B00181C68F6297F9E43F4635 /* Pods-MatrixPediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixPediaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MatrixPediaTests/Pods-MatrixPediaTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC88C5FFF76F8F14B3D51229 /* Pods-MatrixPedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixPedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MatrixPedia/Pods-MatrixPedia.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,13 +127,14 @@
 		AC56750F2193814A0016AB5B /* MatrixPedia */ = {
 			isa = PBXGroup;
 			children = (
-				ACDEAAA921A5CF62005DA240 /* modules */,
+				ACDEAAC221A624F6005DA240 /* Extensions */,
+				ACDEAAA921A5CF62005DA240 /* Modules */,
 				AC5675102193814A0016AB5B /* AppDelegate.swift */,
+				ACDEAAC021A6120E005DA240 /* Constants.swift */,
 				AC5675172193814C0016AB5B /* Assets.xcassets */,
 				ACDEAABE21A5E197005DA240 /* Main.storyboard */,
 				AC5675192193814C0016AB5B /* LaunchScreen.storyboard */,
 				AC56751C2193814C0016AB5B /* Info.plist */,
-				ACDEAAC021A6120E005DA240 /* Constants.swift */,
 			);
 			path = MatrixPedia;
 			sourceTree = "<group>";
@@ -147,7 +148,7 @@
 			path = MatrixPediaTests;
 			sourceTree = "<group>";
 		};
-		ACDEAAA921A5CF62005DA240 /* modules */ = {
+		ACDEAAA921A5CF62005DA240 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				ACDEAAAF21A5CFB6005DA240 /* Protocols */,
@@ -157,13 +158,13 @@
 				ACDEAAAA21A5CF72005DA240 /* Presenter */,
 				ACDEAAAB21A5CF7E005DA240 /* View */,
 			);
-			path = modules;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		ACDEAAAA21A5CF72005DA240 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				ACDEAAB821A5D6BD005DA240 /* LiveNewsPresenter.swift */,
+				ACDEAAB821A5D6BD005DA240 /* MatrixCharactersPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -171,7 +172,6 @@
 		ACDEAAAB21A5CF7E005DA240 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AC567530219382020016AB5B /* CharactersTableViewController.swift */,
 				AC36ADDB219388B9005CA798 /* CharacterrProfileViewController.swift */,
 				ACDEAABC21A5DDE3005DA240 /* CharactersViewController.swift */,
 			);
@@ -210,6 +210,14 @@
 				ACDEAAB621A5D4D2005DA240 /* MatrixProtocols.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		ACDEAAC221A624F6005DA240 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACDEAAC321A62516005DA240 /* UIViewController+Alert.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,12 +397,12 @@
 				ACDEAAC121A6120E005DA240 /* Constants.swift in Sources */,
 				ACDEAAB721A5D4D2005DA240 /* MatrixProtocols.swift in Sources */,
 				AC567533219382320016AB5B /* MatrixCharacter.swift in Sources */,
-				AC567531219382020016AB5B /* CharactersTableViewController.swift in Sources */,
 				AC36ADDE21938BB4005CA798 /* CharacterProfile.swift in Sources */,
 				AC36ADDC219388B9005CA798 /* CharacterrProfileViewController.swift in Sources */,
-				ACDEAAB921A5D6BD005DA240 /* LiveNewsPresenter.swift in Sources */,
+				ACDEAAB921A5D6BD005DA240 /* MatrixCharactersPresenter.swift in Sources */,
 				ACDEAABB21A5D7FD005DA240 /* MatrixCharactersInteractor.swift in Sources */,
 				ACDEAABD21A5DDE3005DA240 /* CharactersViewController.swift in Sources */,
+				ACDEAAC421A62516005DA240 /* UIViewController+Alert.swift in Sources */,
 				ACDEAAB121A5D064005DA240 /* MatrixCharactersRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
