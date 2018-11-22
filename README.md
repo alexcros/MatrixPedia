@@ -1,6 +1,6 @@
 # MatrixPedia
 
-MatrixPedia is a library of characters from the movie 'the matrix' using VIPER architecture
+MatrixPedia is a project of characters from the movie 'the matrix'. This repository uses clean architecture (VIPER) 
 
 
 ### Pods

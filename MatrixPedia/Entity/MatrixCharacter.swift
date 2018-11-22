@@ -18,7 +18,9 @@ class MatrixCharacter {
     let type: MatrixCharacterType
     
     init?(json: [String:Any]) {
-        guard let id = json["id"] as? Int, let alias = json["alias"] as? String, let typeString = json["type"] as? String,
+        guard let id = json["id"] as? Int,
+            let alias = json["alias"] as? String,
+            let typeString = json["type"] as? String,
             let type = MatrixCharacterType(rawValue: typeString) else {
                 return nil
         }
